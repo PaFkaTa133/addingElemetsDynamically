@@ -16,11 +16,20 @@
     </div>
     <script>
       function myFunc() {
-        let newArt = document.createElement("article");
-        newArt.className = "message";
-        newArt.innerHTML = "hello there!";
-        document.body.appendChild(newArt);
-      }
+    let newArt = document.createElement("article");
+    newArt.className = "message";
+    newArt.innerHTML = "hello there!";
+    let nodeParam = document.body.appendChild(newArt);
+    let clone1 = nodeParam.cloneNode(true);
+    let clone2 = nodeParam.cloneNode(true);
+    let clone3 = nodeParam.cloneNode(true);
+    let clone4 = nodeParam.cloneNode(true);
+    document.body.appendChild(clone1);
+    document.body.appendChild(clone2);
+    document.body.appendChild(clone3);
+    document.body.appendChild(clone4);
+  }
     </script>
+    
   </body>
 </html>
