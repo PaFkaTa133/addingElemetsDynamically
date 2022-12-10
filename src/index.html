@@ -9,10 +9,18 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body>
+  <body onclick="myFunc()">
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+    <script>
+      function myFunc() {
+        let newArt = document.createElement("article");
+        newArt.className = "message";
+        newArt.innerHTML = 'hello there!';
+        document.body.appendChild(newArt);     
+      }
+    </script>
   </body>
 </html>
